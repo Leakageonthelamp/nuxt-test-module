@@ -1,7 +1,7 @@
 {
-  "name": "@nuxt-module/test",
+  "name": "nuxt-test-module-leakage",
   "version": "1.1.3",
-  "repository": "https://github.com/Leakageonthelamp/nuxt-test-module",
+  "repository": "https://github.com/Leakageonthelamp/nuxt-test-module.git",
   "license": "MIT",
   "type": "module",
   "exports": {
