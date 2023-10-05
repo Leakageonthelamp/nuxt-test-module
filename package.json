@@ -1,8 +1,7 @@
 {
-  "name": "my-module",
+  "name": "@nuxt-module/test",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "repository": "https://github.com/Leakageonthelamp/nuxt-test-module",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -17,6 +16,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=16.20.0"
+  },
   "scripts": {
     "prepack": "nuxt-module-build build",
     "dev": "nuxi dev playground",
@@ -28,15 +30,19 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.7.4"
+    "@nuxt/kit": "^3.7.4",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "url-join": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.18.1",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.2",
     "@nuxt/schema": "^3.7.4",
     "@nuxt/test-utils": "^3.7.4",
+    "@types/lodash": "^4.14.199",
+    "@types/node": "^18.18.1",
     "changelogen": "^0.5.5",
     "eslint": "^8.50.0",
     "nuxt": "^3.7.4",

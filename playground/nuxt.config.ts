@@ -1,5 +1,7 @@
+import module from "../src/module";
+
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  myModule: {},
-  devtools: { enabled: true }
-})
+  modules: [module],
+  testModule: {},
+  devtools: { enabled: true },
+});

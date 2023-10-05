@@ -4,5 +4,11 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
+import { useUtils } from '#imports';
+
+const { StringHelper } = useUtils();
+
+console.log(StringHelper.toCamelCase('hello-world'));
+
 </script>
