@@ -1,6 +1,6 @@
 {
   "name": "@nuxt-module/test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/Leakageonthelamp/nuxt-test-module",
   "license": "MIT",
   "type": "module",
