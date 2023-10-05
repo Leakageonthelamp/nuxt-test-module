@@ -1,7 +1,18 @@
 import { _get } from "./lodash";
-import { IError } from "../types/common";
+import { IError, IGetParams } from "../types/common";
 
 export class ParamHelper {
+  static getParams = (opts: IGetParams, reqOptions: IGetParams) => {
+    if (opts.params) {
+      return {
+        ...reqOptions.params,
+        ...opts.params,
+      };
+    }
+
+    return reqOptions.params;
+  };
+
   static getBoolTrue = (bool: any): boolean => {
     if (bool === "false") {
       return false;

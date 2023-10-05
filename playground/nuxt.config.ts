@@ -1,7 +1,7 @@
 import module from "../src/module";
 
 export default defineNuxtConfig({
-  modules: [module],
+  modules: [module, "@pinia/nuxt"],
   testModule: {},
   devtools: { enabled: true },
 });

@@ -5,10 +5,13 @@
 </template>
 
 <script lang="ts" setup>
-import { useUtils } from '#imports';
+import { onMounted } from '#imports';
+import { useUsersGroupsMockStore } from './loaders/mock/useMockLoader'
 
-const { StringHelper } = useUtils();
+const mock = useUsersGroupsMockStore();
 
-console.log(StringHelper.toCamelCase('hello-world'));
-
+onMounted(() => {
+  console.log('mounted');
+  mock.fetch()
+})
 </script>

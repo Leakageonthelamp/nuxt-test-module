@@ -31,8 +31,11 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.7.4",
+    "@pinia/nuxt": "^0.4.11",
+    "axios": "^1.5.1",
     "dayjs": "^1.11.10",
     "lodash": "^4.17.21",
+    "pinia": "^2.1.6",
     "url-join": "^5.0.0"
   },
   "devDependencies": {

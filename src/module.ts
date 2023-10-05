@@ -39,5 +39,11 @@ export default defineNuxtModule<ModuleOptions>({
       as: "useUtils",
       from: resolve(runtimeDir, "composables", "useUtils"),
     });
+
+    addImports({
+      name: "useLibs",
+      as: "useLibs",
+      from: resolve(runtimeDir, "composables", "useLibs"),
+    });
   },
 });
